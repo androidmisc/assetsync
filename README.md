@@ -13,7 +13,7 @@ there is a folder in the app's asset
 		
 by calling:
 <pre><code>
-	AssetFolderSync.syncAssetFolderToFile(this, "assetFolder", new File("/sdcard/test"));
+	AssetFolderSync.syncAssetFolderToFile(getContext(), "assetFolder", new File("/sdcard/test"));
 </code></pre>
 
 
@@ -42,7 +42,7 @@ allprojects {
 </code></pre>
 
 In the modoule's build.gradle, add following dependencies:
-
+<pre><code>
 dependencies {
     debugImplementation 'com.bestcloudbrain:assetsync:1.1@aar'
     releaseImplementation 'com.bestcloudbrain:assetsync:1.1@aar'	
